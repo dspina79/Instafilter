@@ -13,6 +13,8 @@
 		55B01CAF25AC9CEB00517E78 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B01CAE25AC9CEB00517E78 /* Preview Assets.xcassets */; };
 		55B01CB825AD3B1D00517E78 /* CustomBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CB725AD3B1D00517E78 /* CustomBindingView.swift */; };
 		55B01CBF25AD3E9F00517E78 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CBE25AD3E9F00517E78 /* ActionSheetView.swift */; };
+		55B01CC225AE66D600517E78 /* CoreImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CC125AE66D500517E78 /* CoreImageView.swift */; };
+		55B01CC525AE821C00517E78 /* PhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CC425AE821C00517E78 /* PhotoSelectorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		55B01CB025AC9CEB00517E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55B01CB725AD3B1D00517E78 /* CustomBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBindingView.swift; sourceTree = "<group>"; };
 		55B01CBE25AD3E9F00517E78 /* ActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
+		55B01CC125AE66D500517E78 /* CoreImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageView.swift; sourceTree = "<group>"; };
+		55B01CC425AE821C00517E78 /* PhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				55B01CAD25AC9CEB00517E78 /* Preview Content */,
 				55B01CB725AD3B1D00517E78 /* CustomBindingView.swift */,
 				55B01CBE25AD3E9F00517E78 /* ActionSheetView.swift */,
+				55B01CC125AE66D500517E78 /* CoreImageView.swift */,
+				55B01CC425AE821C00517E78 /* PhotoSelectorView.swift */,
 			);
 			path = Instafilter;
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B01CC225AE66D600517E78 /* CoreImageView.swift in Sources */,
 				55B01CB825AD3B1D00517E78 /* CustomBindingView.swift in Sources */,
 				55B01CAA25AC9CE700517E78 /* ContentView.swift in Sources */,
 				55B01CBF25AD3E9F00517E78 /* ActionSheetView.swift in Sources */,
+				55B01CC525AE821C00517E78 /* PhotoSelectorView.swift in Sources */,
 				55B01CA825AC9CE700517E78 /* InstafilterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
