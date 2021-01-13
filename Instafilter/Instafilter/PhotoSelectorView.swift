@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct PhotoSelectorView: View {
+    @State private var image: Image?
+    @State private var showImagePicker = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            image?
+                .resizable()
+                .scaledToFit()
+            
+            Button("Select Image") {
+                showImagePicker = true
+            }
+        }.sheet(isPresented: $showImagePicker) {
+            ImagePicker()
+        }
     }
 }
 

@@ -15,6 +15,7 @@
 		55B01CBF25AD3E9F00517E78 /* ActionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CBE25AD3E9F00517E78 /* ActionSheetView.swift */; };
 		55B01CC225AE66D600517E78 /* CoreImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CC125AE66D500517E78 /* CoreImageView.swift */; };
 		55B01CC525AE821C00517E78 /* PhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CC425AE821C00517E78 /* PhotoSelectorView.swift */; };
+		55B01CC825AE82A300517E78 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CC725AE82A300517E78 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		55B01CBE25AD3E9F00517E78 /* ActionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetView.swift; sourceTree = "<group>"; };
 		55B01CC125AE66D500517E78 /* CoreImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageView.swift; sourceTree = "<group>"; };
 		55B01CC425AE821C00517E78 /* PhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorView.swift; sourceTree = "<group>"; };
+		55B01CC725AE82A300517E78 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				55B01CBE25AD3E9F00517E78 /* ActionSheetView.swift */,
 				55B01CC125AE66D500517E78 /* CoreImageView.swift */,
 				55B01CC425AE821C00517E78 /* PhotoSelectorView.swift */,
+				55B01CC725AE82A300517E78 /* ImagePicker.swift */,
 			);
 			path = Instafilter;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				55B01CC225AE66D600517E78 /* CoreImageView.swift in Sources */,
 				55B01CB825AD3B1D00517E78 /* CustomBindingView.swift in Sources */,
 				55B01CAA25AC9CE700517E78 /* ContentView.swift in Sources */,
+				55B01CC825AE82A300517E78 /* ImagePicker.swift in Sources */,
 				55B01CBF25AD3E9F00517E78 /* ActionSheetView.swift in Sources */,
 				55B01CC525AE821C00517E78 /* PhotoSelectorView.swift in Sources */,
 				55B01CA825AC9CE700517E78 /* InstafilterApp.swift in Sources */,
