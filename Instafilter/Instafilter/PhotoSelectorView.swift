@@ -10,6 +10,7 @@ import SwiftUI
 struct PhotoSelectorView: View {
     @State private var image: Image?
     @State private var showImagePicker = false
+    @State private var inputImage: UIImage?
     
     var body: some View {
         VStack {
@@ -20,9 +21,14 @@ struct PhotoSelectorView: View {
             Button("Select Image") {
                 showImagePicker = true
             }
-        }.sheet(isPresented: $showImagePicker) {
-            ImagePicker()
+        }.sheet(isPresented: $showImagePicker, onDismiss: loadImage) {
+            ImagePicker(image: $inputImage)
         }
+    }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
     }
 }
 

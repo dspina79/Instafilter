@@ -11,6 +11,7 @@ import CoreImage.CIFilterBuiltins
 
 struct CoreImageView: View {
     @State private var image: Image?
+   
     var body: some View {
         VStack {
             image?
