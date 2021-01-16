@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		559683F425B27A5C0052F141 /* NewImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559683F325B27A5C0052F141 /* NewImagePicker.swift */; };
 		55B01CA825AC9CE700517E78 /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CA725AC9CE700517E78 /* InstafilterApp.swift */; };
 		55B01CAA25AC9CE700517E78 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B01CA925AC9CE700517E78 /* ContentView.swift */; };
 		55B01CAC25AC9CEB00517E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B01CAB25AC9CEB00517E78 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		559683F325B27A5C0052F141 /* NewImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewImagePicker.swift; sourceTree = "<group>"; };
 		55B01CA425AC9CE700517E78 /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B01CA725AC9CE700517E78 /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
 		55B01CA925AC9CE700517E78 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				55B01CC125AE66D500517E78 /* CoreImageView.swift */,
 				55B01CC425AE821C00517E78 /* PhotoSelectorView.swift */,
 				55B01CC725AE82A300517E78 /* ImagePicker.swift */,
+				559683F325B27A5C0052F141 /* NewImagePicker.swift */,
 			);
 			path = Instafilter;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			files = (
 				55B01CC225AE66D600517E78 /* CoreImageView.swift in Sources */,
 				55B01CB825AD3B1D00517E78 /* CustomBindingView.swift in Sources */,
+				559683F425B27A5C0052F141 /* NewImagePicker.swift in Sources */,
 				55B01CAA25AC9CE700517E78 /* ContentView.swift in Sources */,
 				55B01CC825AE82A300517E78 /* ImagePicker.swift in Sources */,
 				55B01CBF25AD3E9F00517E78 /* ActionSheetView.swift in Sources */,
