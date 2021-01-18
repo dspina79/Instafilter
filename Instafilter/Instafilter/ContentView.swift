@@ -12,6 +12,9 @@ import CoreImage.CIFilterBuiltins
 struct ContentView: View {
     @State var image: Image?
     @State var filterIntensity = 0.5
+    @State var filterRoundness = 0.0
+    @State var filterSharpness = 1.0
+    
     @State var showImagePicker = false
     @State var showActionSheet = false
     @State var inputImage: UIImage?
@@ -24,6 +27,25 @@ struct ContentView: View {
     let context = CIContext()
     
     var body: some View {
+        let sharpness = Binding<Double> (
+            get: {
+                return self.filterSharpness
+            },
+            set: {
+                self.filterSharpness = $0
+                applyProcessing()
+            }
+        )
+        let roundness = Binding<Double> (
+            get: {
+                self.filterRoundness
+            },
+            set: {
+                self.filterRoundness = $0
+                self.applyProcessing()
+            }
+        )
+        
         let intensity = Binding<Double> (
             get: {
                 self.filterIntensity
@@ -55,7 +77,20 @@ struct ContentView: View {
                 }
                 
                 HStack {
+                    Text("Intensity")
                     Slider(value: intensity)
+                }
+                .padding(.vertical)
+                
+                HStack {
+                    Text("Roundness")
+                    Slider(value: roundness)
+                }
+                .padding(.vertical)
+                
+                HStack {
+                    Text("Sharpness")
+                    Slider(value: sharpness)
                 }
                 .padding(.vertical)
                 
@@ -134,8 +169,17 @@ struct ContentView: View {
                 currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)
         }
         if filterKeys.contains(kCIInputRadiusKey) {
-            currentFilter.setValue(filterIntensity * 200.0, forKey: kCIInputRadiusKey)
+            currentFilter.setValue(filterRoundness * 200.0, forKey: kCIInputRadiusKey)
         }
+        
+        if filterKeys.contains(kCIInputWidthKey) {
+            currentFilter.setValue(filterRoundness, forKey: kCIInputWidthKey)
+        }
+        
+        if filterKeys.contains(kCIInputSharpnessKey) {
+            currentFilter.setValue(filterSharpness * 100.0, forKey: kCIInputSharpnessKey)
+        }
+        
         if filterKeys.contains(kCIInputScaleKey) {
             currentFilter.setValue(filterIntensity * 10.0, forKey: kCIInputScaleKey)
         }
